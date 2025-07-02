@@ -177,7 +177,7 @@ Eg::
 How to Load html file in browser from VSCode?
 *install open in browser extensions-- TechER
 
-2.Unordered List
+2.Unordered List--( disc)
 ------------------
 
 <h2>unOrdered List </h2>
@@ -188,19 +188,242 @@ How to Load html file in browser from VSCode?
    <li>React</li>
 </ul>
 
-3.Description List
+3.Description List--dl
+-------------------------------
+apple-fruit,company name, nick name,.....
+adding description like ---dt
+Company then it is used to define the data--dd
+<h2> Description Element</h2>
+<dl>
+	<dt><b>Name</b></dt>
+	<dd>Raj</dd>
+	
+	<dt><strong>Class</strong></dt>
+	<dd>CSE-b</dd>
+</dl>
+
+what is the difference btw bolt and strong
+
 
 DAY-5::
+
+Attributes in html
+attributes are called properties of html elements
+using attributes we can provide extra info about elements to the browser
+using attributes we can extend functionality of html elements
+
+Note:: Start and reversed attribute will only if type="1"
+There are no attributes for description list
+common attributes are id,name,class
+
+
+<ol type="1" start="201" reversed>
+<li>html</li>
+<li<css</li>
+</ol>
+
+Every attribute in html defined in key value pair
+key="<value>"
+type="a"
+
+For ol
+---------
+type: 1,a,A,i,I
+
+for ul
+-------
+type: circle,square,none,
 
 Structure html Document::
 -----------------------------
 1.Document Declaration 
+ <!Doctype html> ::html5--2014
 
 2.Document Scope
+ <html>
+  <head>
+   <title>Title Section</title>
+  </head>
+  <body> </body>
+ </html>
 
 
+In head
+---------
+link
+style--css
+script---javacode
+title
+meta--link tags
 
 
+DAY-6::
+nested list
+---------------
+List inside the list is called nested list
+<!Doctype html>
+<html>
+<head>
+<title> Nested List</title>
+</head>
+
+<body>
+<h2>Nested List</h2>
+<ol>
+li*4
+<li>html
+  <ol>
+    li*3
+    <li>elements</li>
+    <li>attributes</li>
+    <li>tags</li>
+  </ol>
+</li>
+<li></li>
+<li></li>
+
+</ol>
+
+</html>
+
+Division element
+------------------
+It is used to group multiple elements
+it is used to create logical sections on web page
+it provides single tag and it is paired tag
+tag name is div
+one div ele is considered as one section
+<div>Section 1
+</div>
+
+Anchor elements
+---------------------
+1.we can create links
+2. we can implement inter and intra Navigation
+
+It provides a tag called <a> </a> and it is paired tag
+Links.html::
+-----------------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <h1>Links Concept</h1>
+    <a href="">Home</a>
+    <a href="profile.html">profile</a>
+    <a href="">products</a>
+    <a href="">Contact us</a>
+</body>
+</html>
+
+profile.html::
+-------------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>profile</title>
+</head>
+<body>
+    <h1>Profile Page</h1>
+    <p>
+        
+    </p>
+</body>
+</html>
+
+DAY-7::
+-----------------------
+Intra Navigation:
+----------------
+It is a technique to switch from one section to another section in same web page
+
+Attibutes of anchor elements
+-----------------------------
+<a id="" name="" class="" href="id/path" target="_self"> </a>
+_self,_top,_parent
+
+Image Element
+-------------------
+It is used to display image on web page
+it provide img tag to define Image element
+it is a self closing tag
+
+<img/>
+image element will create a container on web page
+page in which we can display image
+by default width and height of the container is 0
+<img width="200" height="200" alt="male user img" title="Siddu" src=""/>
+
+
+DAY-8::
+--------------------
+
+Table elements
+It is used to create table and the data in tabular format.
+It is used to create layout for web page or any specific section on web page
+
+Flex,grid new concepts to create table
+ 
+Table header -- thead
+table body --tbody
+table footer--tfoot
+table row--tr
+table heading--th
+table data --td
+caption--caption
+
+
+Attributes
+------------
+1.frame: it is used add border kind of structure to table element
+values are:box,above,below,lhs,rhs
+align--left right center
+valign-top center bottom
+
+----------------------
+frame
+rule
+width
+height
+border
+align
+valign
+colspan
+rowspan
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div>
+        <table width="100%">
+            <tr>
+                <td width="30%">
+                    <img src="" alt="RajImage" width="100%" height="300">
+                </td>
+                <td width="70%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum expedita laudantium
+                    corporis soluta ullam porro eius reprehenderit tempore cupiditate accusantium ab animi quisquam
+                    nobis ex iste excepturi vero, accusamus aperiam doloremque laborum asperiores aspernatur
+                    perspiciatis. Reprehenderit fugit unde reiciendis, temporibus quaerat aliquid dolorem ut odio ex
+                    porro maiores explicabo repudiandae architecto facere quas, voluptatum optio non. Ipsam, fugiat
+                    exercitationem facilis quod commodi modi esse optio animi inventore natus doloremque, dicta quasi
+                    assumenda minima autem! Voluptatem mollitia placeat tempore eveniet debitis itaque! Dignissimos,
+                    consequatur nihil! Assumenda omnis provident quo, quidem voluptate sunt, architecto soluta inventore
+                    vel voluptates nobis repellendus, consequatur nihil.</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
 
 
 
